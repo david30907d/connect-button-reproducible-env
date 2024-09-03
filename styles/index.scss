@@ -1,0 +1,121 @@
+@import "./reset.css";
+
+$dark-color: #000000;
+$primary-color: #5dfdcb;
+
+body {
+  background-color: $dark-color;
+}
+
+.div-logo {
+  height: 40px;
+  display: inline-block;
+}
+
+// table css
+
+// .ant-btn-default {
+//   background-color: $dark-color;
+// }
+
+.ant-table-wrapper {
+  border: 1px solid $primary-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow-x: scroll;
+
+  .ant-table {
+    .ant-table-tbody > tr > td {
+      background-color: #000000;
+      border-bottom: 1px solid $primary-color;
+    }
+
+    .ant-table-tbody > tr:hover > td {
+      background-color: #333333;
+    }
+  }
+}
+
+.ant-tag {
+  font-weight: bold;
+}
+
+.ant-table-title {
+  margin-bottom: 15px;
+}
+
+.heading-title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+// Modal styles
+.black-modal .ant-modal-content {
+  background-color: $dark-color;
+  border-radius: 1rem;
+}
+
+.black-modal .ant-modal-header,
+.black-modal .ant-modal-footer {
+  background-color: $dark-color;
+  border: none;
+}
+
+.black-modal .ant-modal-close-x {
+  color: white;
+}
+
+// scrollbar css
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  background: transparent;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #c9caca;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+}
+
+.connect-button {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+[data-rk] .ju367v9c {
+  color: $primary-color;
+  background-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+  .div-logo {
+    display: none;
+  }
+
+  .heading-title {
+    font-size: 2.4rem;
+  }
+
+  .heading-subtitle {
+    font-size: 1.2rem;
+  }
+}
